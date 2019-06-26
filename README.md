@@ -20,8 +20,19 @@ The script will run as follows:
 4. Approximate the edges to polygons, and find the ones with the same shape of the sign (rectangular or hexagonal, for example);
 5. At this moment, we will have a few polygons, which can be the sign. To choose the correct one, we will examine:
     1. The polygon area. If it's greater than a given threshold and smaller than the image area;
-    2. ??
-6. ??
-7. Output the crops where the text is located.
+    2. Its content. If there's no content, it's not a valid plate.
+7. Output the crop where the text is located.
 
-Additionally, different parameters values will be analyzed for each of the algorithms.
+Additionally, different parameters values were analyzed for each of the algorithms.
+
+## Running it
+
+Run
+
+**python detect-text-plates.py**
+
+Press Enter, and then write the image name
+
+**imgs/img_883.jpg**
+
+An output.jpg should appear in the folder
